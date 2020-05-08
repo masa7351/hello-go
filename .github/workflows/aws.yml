@@ -77,6 +77,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: hello-go-service5
+          service: hello-go-service
           cluster: hello-go
           wait-for-service-stability: true
